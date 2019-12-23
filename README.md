@@ -1,17 +1,21 @@
-# update-lambda
-Github Action to Update Lambda Function
+
+Github Action to update a Lambda function.
 
 # How to use
 
-Works with existing zip package, can be created in steps or job prior to this action.
+Takes 
+This file can be created in a step or job prior to this action.
 
-Create secrets:
-  * AWS_REGION
-  * AWS_SECRET_ID
-  * AWS_SECRET_KEY
+Required parameters:
+  * `package`: A ZIP file with the code of your Lambda.
+
+  * `function-name`
+  * `AWS_REGION`
+  * `AWS_SECRET_ID`
+  * `AWS_SECRET_KEY`
 
 ```
-name: Test Run
+name: Update Lambda
 on:
   push
 jobs:
