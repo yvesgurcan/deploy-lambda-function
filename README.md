@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@master
       - run: echo "THIS IS A TEST PACKAGE" > file.txt
       - run: zip lambda.zip file.txt
-      - uses: yvesgurcan/update-lambda-function
+      - uses: yvesgurcan/deploy-lambda-function
         with:
           package: lambda.zip
           function-name: TEST-FUNCTION
