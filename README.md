@@ -12,7 +12,7 @@ Github Action to deploy/update a Lambda function from a ZIP file.
 ## Example
 
 ```
-name: Update Lambda
+name: Deploy Lambda
 
 on:
   pull_request:
@@ -21,7 +21,7 @@ on:
         - master
 
 jobs:
-  lambda:
+  deploy-lambda:
     if: github.event.pull_request.merged
     runs-on: ubuntu-latest
     steps:
