@@ -1,4 +1,4 @@
-name: 'Update AWS Lambda function'
+name: 'Deploy AWS Lambda function'
 description: 'Update the code of an AWS Lambda function'
 author: 'Yves Gurcan'
 branding:
