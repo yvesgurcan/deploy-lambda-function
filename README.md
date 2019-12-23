@@ -1,5 +1,5 @@
 
-Github Action to update a Lambda function.
+Github Action to deploy/update a Lambda function from a ZIP file.
 
 ## Required parameters
 
