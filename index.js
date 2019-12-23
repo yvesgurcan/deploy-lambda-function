@@ -10,10 +10,10 @@ try {
   const AWS_SECRET_ID = core.getInput('AWS_SECRET_ID');
   const AWS_REGION = core.getInput('AWS_REGION');
 
-  console.log(`Updating Function Name ${functionName} with ${package}!`);
+  console.log(`Deploying ${functionName} from ${package}.`);
 
   var zipBuffer = fs.readFileSync(`./${package}`);
-  core.debug('Package put into memory buffer');
+  core.debug('ZIP file put into memory buffer.');
 
   const lambda = new AWS.Lambda({
       apiVersion: '2015-03-31',
@@ -27,7 +27,7 @@ try {
 
   const params = {
     FunctionName: functionName,
-    Publish: false,
+    Publish: true,
     ZipFile: zipBuffer,
   };
 
