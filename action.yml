@@ -2,7 +2,8 @@ name: 'Update AWS Lambda function'
 description: 'Update the code of an AWS Lambda function'
 author: 'Yves Gurcan'
 branding:
-  icon: 'check-square'
+
+  icon: 'layers'
   color: 'orange'
 inputs:
   package:
