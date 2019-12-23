@@ -1,24 +1,24 @@
-name: 'AWS Update Lambda Action'
-description: 'Update AWS Lambda Function'
-author: 'Kyle Calica'
+name: 'Update AWS Lambda function'
+description: 'Update the code of an AWS Lambda function'
+author: 'Yves Gurcan'
 branding:
   icon: 'check-square'
   color: 'orange'
 inputs:
   package:
-    description: 'Zip Package of Lambda and dependencies'
+    description: 'Zip package of Lambda and dependencies'
     default: ''
   function-name:
-    description: 'Lambda Function Name'
+    description: 'Name of Lambda function'
     default: ''
   AWS_SECRET_KEY:
-    description: 'AWS Secret Key'
+    description: 'AWS secret key'
     default: ''
   AWS_SECRET_ID:
-    description: 'AWS Secret Key'
+    description: 'AWS secret key ID'
     default: ''
   AWS_REGION:
-    description: 'AWS Region'
+    description: 'AWS region of the Lambda'
     default: ''
 runs:
   using: 'node12'
